@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <div class="hearts-bg" id="heartsBackground"></div>
+
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>A Special Message Awaits!!</h1>
+            <p>Enter the secret password to unlock you're Birthday surprise...</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" />
+            <br>
+            <button class="enter-btn" onclick="checkPassword()">Enter</button>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #888;">Hint: The password is "tanggal ultah aku"</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Happy Birthday!!</h1>
+                <p>A small milestone for you, Zia.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn active" onclick="showPage('album')">You</button>
+                <button class="nav-btn" onclick="showPage('letter')">From My Heart, To Yours.</button>
+            </div>
+
+            <div class="page active" id="album">
+                <h2 style="color: #c44569; margin-bottom: 20px; text-align: center;">The beauty of Zia</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="src/1.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/2.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/3.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/4.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/5.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="letter">
+                <h2 style="color: #c44569; margin-bottom: 30px; text-align: center;">Happy birthday, zia</h2>
+                <div class="love-letter">
+                    <br>
+                    <p>aku tahu keadaan kita sekarang sudah beda, but i couldn’t let this day pass without reaching out to you. rasanya baru kemarin ya kita bareng-bareng, and honestly, it’s still a bit surreal not being the first person to call you or celebrate this day by your side.</p><br>
+                    <p>sambil ngucapin ini, aku juga mau minta maaf yaaa kalau selama kita bareng atau pas kita pisah ada kata-kata atau sikapku yang mungkin nyakitin hati kamuu. i truly regret any pain i might have caused, and I hope we can both find peace moving forward.</p><br>
+                    <p>Di hari ulang tahun kamu ini, i hope this new chapter brings you so much peace, growth, and all the happiness you’ve been searching for. Aku tahu kamu orang yang hebat dan punya mimpi yang besar, and I’m still rooting for you from a distance. Semoga hari ini kamu dikelilingi sama orang-orang yang sayang sama kamu, yang bisa bikin kamu ketawa seharian. You deserve all the good things this world has to offer. Walaupun peran aku sekarang sudah berubah, I’m just glad I got to know you and be a part of your journey.
+                        Have a wonderful birthday, ziaa. Sehat sehat terus ya di sana. and sorry aku cuma ngasi ini.</p>
+                    <br>
+                  <p style="text-align: right;"><br> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" class="hidden-file-input" id="photoUpload" accept="image/*" onchange="handlePhotoUpload(event)">
+    <input type="file" class="hidden-file-input" id="puzzleImageUpload" accept="image/*" onchange="handlePuzzleImageUpload(event)">
+    <script src="src/script.js" defer></script>
+</body>
+
+</html>
+
+
+
